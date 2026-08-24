@@ -1,5 +1,18 @@
 # Subscrio
 
+<p align="center">
+  <a href="https://subscrio.com">
+    <img src="https://subscrio.com/assets/images/logo/logo-576x110.png" alt="Subscrio" width="240">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://subscrio.com"><img src="https://img.shields.io/badge/Website-subscrio.com-696dc0?style=flat-square" alt="Website"></a>
+  <a href="https://docs.subscrio.com"><img src="https://img.shields.io/badge/Docs-docs.subscrio.com-696dc0?style=flat-square" alt="Documentation"></a>
+  <a href="https://github.com/subscrio/subscrio/issues"><img src="https://img.shields.io/badge/Issues-subscrio%2Fsubscrio-181717?style=flat-square&logo=github" alt="Issues"></a>
+  <a href="https://github.com/subscrio/subscrio/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="MIT License"></a>
+</p>
+
 Subscrio is an open-source entitlement engine for .NET and TypeScript applications. It stores products, features, plans, customers, and subscriptions in your database, then resolves the feature value available to a customer.
 
 The library is embedded in the application that needs the access decision. It does not require a hosted entitlement service.
@@ -90,6 +103,17 @@ See [repos.md](./repos.md) for the repository list and recommended folder layout
 Use the implementation README in each repository for build, test, and contribution instructions. Cross-cutting changes start in [subscrio/subscrio](https://github.com/subscrio/subscrio/issues).
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+## Project & community
+
+| | |
+| --- | --- |
+| **Cross-cutting issues** | [subscrio/subscrio/issues](https://github.com/subscrio/subscrio/issues) |
+| **Discussions** | [subscrio/subscrio/discussions](https://github.com/subscrio/subscrio/discussions) |
+| **Website** | [subscrio.com](https://subscrio.com) |
+| **Documentation** | [docs.subscrio.com](https://docs.subscrio.com) |
+
+Created and maintained by [Jasen Fici](https://github.com/jasenf).
 
 ## License
 

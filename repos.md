@@ -3,6 +3,7 @@
 | Repository | Purpose |
 | --- | --- |
 | [subscrio/subscrio](https://github.com/subscrio/subscrio) | Hub, cross-cutting issues |
+| [subscrio/.github](https://github.com/subscrio/.github) | Organization profile page (`profile/README.md`) |
 | [subscrio/subscrio-typescript](https://github.com/subscrio/subscrio-typescript) | TypeScript core (npm `subscrio`) |
 | [subscrio/subscrio-dotnet](https://github.com/subscrio/subscrio-dotnet) | .NET core (NuGet `Subscrio.Core`) |
 | [subscrio/subscrio-extensions-audit-log](https://github.com/subscrio/subscrio-extensions-audit-log) | Audit log extension |
@@ -19,6 +20,7 @@
 
 ```
 <workspace>/
+├── .github/               # org profile (subscrio/.github)
 ├── subscrio/              # hub
 ├── core/
 │   ├── typescript/        # subscrio-typescript
