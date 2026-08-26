@@ -17,6 +17,10 @@ Subscrio is an open-source entitlement engine for .NET and TypeScript applicatio
 
 The library is embedded in the application that needs the access decision. It does not require a hosted entitlement service.
 
+## Project status
+
+This project has not yet reached version 1.0, so its API may change between releases. However, the codebase is actively maintained and currently used in multiple commercial products.
+
 ## Why it exists
 
 Plan-name checks tend to spread through application code. They become harder to maintain when plans change, a customer negotiates an exception, several subscriptions provide access, or a feature needs a limit instead of a yes-or-no result.
