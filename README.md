@@ -13,9 +13,9 @@
   <a href="https://github.com/subscrio/subscrio/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="MIT License"></a>
 </p>
 
-Subscrio is an open-source entitlement engine for .NET and TypeScript applications. It stores products, features, plans, customers, and subscriptions in your database, then resolves the feature value available to a customer.
+Subscrio is an open-source entitlement engine for .NET and TypeScript applications. Use Subscrio to define what each plan includes and determine what each customer can access. It stores products, features, plans, customers, and subscriptions in your database, then resolves feature values from the customer's subscriptions and any customer-specific overrides.
 
-The library is embedded in the application that needs the access decision. It does not require a hosted entitlement service.
+The .NET and TypeScript libraries run inside your application and do not require a hosted entitlement service.
 
 ## Project status
 
