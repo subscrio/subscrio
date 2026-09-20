@@ -83,6 +83,12 @@ First-party extensions register through Subscrio hooks and maintain their own da
 
 See [How to extend Subscrio](https://docs.subscrio.com/reference/how-to-extend.md) for hook behavior and extension examples.
 
+## Integrations
+
+| Package | Purpose | Repository | Install |
+| --- | --- | --- | --- |
+| [`Subscrio.Abp`](https://www.nuget.org/packages/Subscrio.Abp) | Resolves ABP tenant or user feature checks through Subscrio. | [subscrio-abp](https://github.com/subscrio/subscrio-abp) | `dotnet add package Subscrio.Abp` |
+
 ## Stripe integration
 
 The optional Stripe integration turns supported subscription events into Subscrio subscription updates. When your application receives the webhook, it must verify the Stripe signature before passing the event to the library. The separate Subscrio Web Admin can receive and verify Stripe webhooks directly.

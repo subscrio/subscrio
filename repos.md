@@ -8,6 +8,7 @@
 | [subscrio/subscrio-dotnet](https://github.com/subscrio/subscrio-dotnet) | .NET core (NuGet `Subscrio.Core`) |
 | [subscrio/subscrio-extensions-audit-log](https://github.com/subscrio/subscrio-extensions-audit-log) | Audit log extension |
 | [subscrio/subscrio-extensions-payments](https://github.com/subscrio/subscrio-extensions-payments) | Payments extension |
+| [subscrio/subscrio-abp](https://github.com/subscrio/subscrio-abp) | ABP integration (NuGet `Subscrio.Abp`) |
 | [subscrio/docs](https://github.com/subscrio/docs) | Documentation site |
 | [subscrio/server](https://github.com/subscrio/server) | Web admin / server (private) |
 | [subscrio/website](https://github.com/subscrio/website) | Marketing site (private) |
@@ -16,7 +17,7 @@
 
 ## Local workspace layout
 
-`core/` and `extensions/` are **local grouping folders only** — not git repos. Each row below is one git repository checked out at the path shown.
+`core/`, `extensions/`, and `integrations/` are **local grouping folders only** — not git repos. Each row below is one git repository checked out at the path shown.
 
 ```
 <workspace>/
@@ -34,6 +35,8 @@
 │       ├── typescript/
 │       ├── dotnet/
 │       └── README.md
+├── integrations/
+│   └── abp/               # subscrio-abp
 ├── docs/
 ├── website/
 ├── server/
@@ -51,6 +54,7 @@
 
 - **Server** and **extension** packages use `file:` paths to `core/typescript` and sibling extension folders. Check out the full layout above before `npm install` in `server/` or extension `typescript/` folders.
 - **Extension .NET** projects reference `core/dotnet` via relative `ProjectReference` paths. Build core before extension tests when working locally.
+- **ABP integration** uses the sibling `core/dotnet` project in the full workspace and the matching published `Subscrio.Core` package when cloned by itself.
 - **PostgreSQL** is required for core, extension, and server tests. Set `TEST_DATABASE_URL` or use `.env` as described in each package's test README.
 - **Server tests** must keep `SENDGRID_ENABLED=false` in `server/tests/.env`.
 
@@ -70,6 +74,9 @@ cd extensions/payments/typescript && npm install && npm test
 # Extensions (.NET)
 cd extensions/audit-log/dotnet && dotnet test
 cd extensions/payments/dotnet && dotnet test
+
+# ABP integration
+cd integrations/abp && dotnet test Subscrio.Abp.Sample.slnx -c Release
 
 # Server
 cd server && npm install && npm run build && npm test
