@@ -10,6 +10,7 @@
 | [subscrio/subscrio-extensions-payments](https://github.com/subscrio/subscrio-extensions-payments) | Payments extension |
 | [subscrio/subscrio-abp](https://github.com/subscrio/subscrio-abp) | ABP integration (NuGet `Subscrio.Abp`) |
 | [subscrio/docs](https://github.com/subscrio/docs) | Documentation site |
+| [subscrio/samples](https://github.com/subscrio/samples) | Public runnable examples for how-to articles; sample index tracks readiness |
 | [subscrio/server](https://github.com/subscrio/server) | Web admin / server (private) |
 | [subscrio/website](https://github.com/subscrio/website) | Marketing site (private) |
 | [subscrio/internal](https://github.com/subscrio/internal) | Release scripts and demo data (private) |
@@ -38,6 +39,7 @@
 ├── integrations/
 │   └── abp/               # subscrio-abp
 ├── docs/
+├── samples/
 ├── website/
 ├── server/
 ├── internal/
